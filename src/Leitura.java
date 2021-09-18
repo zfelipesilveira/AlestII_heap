@@ -96,6 +96,8 @@ public class Leitura {
             //System.out.println(lucroFinal);
             //System.out.println("Teste");
 
+            System.out.println("teste");
+
 
 
         } catch (IOException e) {
