@@ -14,25 +14,6 @@ public class Leitura {
 
     public static void main(String agrs[]){
 
-        //leEntrada("entrada.txt");
-
-
-
-
-        //MaxHeap compras = new MaxHeap()
-        //MinHeap vendas = new MinHeap()
-
-
-
-
-        int contVendas = 0;
-        int contCompras = 0;
-
-
-
-
-        String linhas[] = new String[1000000];
-        int numLinhas = 0;
 
         Path path1 = Paths.get("operacoes.txt"); // localiza o arquivo que será lido
 
@@ -61,10 +42,6 @@ public class Leitura {
                         vendas.poll();
 
 
-                        // ajustar quantidade de acoes que sobraram das compras
-                        //ajustar o a diferenca do peek[1] das compras pelo peek[1] das vendas
-                        //acumular numero de acoes pela quantidade de acoes de vendas (peek[1] das vendas multiplicado por 2)
-                        //remover o top das vendas (vendas.poll())
                     }
                     else if (Integer.parseInt(compras.peek()[1]) < Integer.parseInt((vendas.peek()[1]))){
                         lucroFinal = lucroFinal + (Integer.parseInt(compras.peek()[2] ) - Integer.parseInt(vendas.peek()[2])) * Integer.parseInt(compras.peek()[1]);
@@ -92,17 +69,6 @@ public class Leitura {
             System.out.println("Ainda restaram " + vendas.size() + " ordens de vendas e " + compras.size() + " ordens de compras");
 
 
-
-            //System.out.println(vendas.size());
-
-
-            //System.out.println(lucroFinal);
-            //System.out.println(numeroAcoes);
-
-            //System.out.println(lucroFinal);
-            //System.out.println("Teste");
-
-            System.out.println("teste");
 
 
 
