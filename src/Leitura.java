@@ -87,8 +87,14 @@ public class Leitura {
 
             }
 
-            System.out.println(lucroFinal);
-            System.out.println(numeroAcoes);
+            System.out.println("O lucro final obtido é de " + lucroFinal + " reais");
+            System.out.println("O número de ações negociadas é de " + numeroAcoes);
+            System.out.println("Ainda restaram " + vendas.size() + " ordens de vendas e " + compras.size() + " ordens de compras");
+
+
+
+            //System.out.println(vendas.size());
+
 
             //System.out.println(lucroFinal);
             //System.out.println(numeroAcoes);
