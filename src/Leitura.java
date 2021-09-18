@@ -39,8 +39,8 @@ public class Leitura {
         try (BufferedReader reader = Files.newBufferedReader(path1, Charset.defaultCharset())) {
             String line = null;
             int heapSize = Integer.parseInt(reader.readLine());
-            PriorityQueue<String[]> compras = new PriorityQueue<>(heapSize, Comparator.comparingInt(x -> -Integer.parseInt(x[2])));
-            PriorityQueue<String[]> vendas = new PriorityQueue<>(heapSize, Comparator.comparingInt(x -> Integer.parseInt(x[2])));
+            PriorityQueue<String[]> compras = new PriorityQueue<>(heapSize, Comparator.comparingInt(x -> -Integer.parseInt(x[2]))); //MaxHeap
+            PriorityQueue<String[]> vendas = new PriorityQueue<>(heapSize, Comparator.comparingInt(x -> Integer.parseInt(x[2]))); //MinHeap
             int lucroFinal = 0;
             int numeroAcoes = 0;
 
